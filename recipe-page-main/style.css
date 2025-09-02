@@ -1,0 +1,161 @@
+/* --- Base Styles for Mobile-First Design --- */
+:root {
+    --primary-color: #4C3C3B;
+    --heading-color: #5D433A;
+    --background-color: #F8F4F0;
+    --preparation-bg: #FFF7FB;
+    --line-color: #D6D2CE;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Merriweather', serif;
+    color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 100%;
+    background-color: #fff;
+}
+
+.image-container img {
+    width: 100%;
+    display: block;
+}
+
+.content-wrapper {
+    padding: 2rem;
+}
+
+/* --- Typography --- */
+h1.recipe-heading {
+    font-family: 'EB Garamond', serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+p.recipe-description {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.section-heading {
+    font-family: 'EB Garamond', serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--heading-color);
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.preparation-heading {
+    color: #614643;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* --- Preparation Section --- */
+.preparation-section {
+    background-color: var(--preparation-bg);
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+
+.prep-list {
+    list-style-type: disc;
+    list-style-position: inside;
+    padding-left: 1rem;
+}
+
+.prep-list li {
+    padding-left: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* --- Ingredients List --- */
+.ingredients-list {
+    list-style-type: disc;
+    list-style-position: inside;
+    padding-left: 1rem;
+}
+
+.ingredients-list li {
+    padding-left: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* --- Horizontal Divider --- */
+.divider {
+    border-top: 1px solid var(--line-color);
+    margin: 2rem 0;
+}
+
+/* --- Instructions Section --- */
+.instructions-list {
+    list-style-type: decimal;
+    padding-left: 1.5rem;
+}
+
+.instructions-list li {
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* --- Nutrition Table --- */
+.nutrition-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nutrition-table tr {
+    border-bottom: 1px solid var(--line-color);
+}
+
+.nutrition-table tr:last-child {
+    border-bottom: none;
+}
+
+.nutrition-table td {
+    padding: 1rem 0;
+}
+
+.nutrition-table td:nth-child(2) {
+    text-align: right;
+    font-weight: bold;
+    color: var(--heading-color);
+}
+
+/* --- Media Query for Desktop Design --- */
+@media (min-width: 768px) {
+    body {
+        background-color: var(--background-color);
+        padding: 5rem;
+    }
+
+    .container {
+        background-color: white;
+        max-width: 768px;
+        margin: 0 auto;
+        border-radius: 20px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .image-container {
+        padding: 2rem 2rem 0 2rem;
+    }
+
+    .image-container img {
+        border-radius: 12px;
+    }
+
+    .content-wrapper {
+        padding: 2rem 2.5rem;
+    }
+}
