@@ -5,7 +5,7 @@ This repository is a collection of my solutions to various challenges from **Fro
 ## 🔗 Live Demo
 
 Each project folder contains a separate `README.md` file with a link to its live demo.
-[Live](https://www.frontend-mentor-rahman-naimur.vercel.app/).
+[Live](https://rahman-naimur.github.io/Frontend-Mentor/).
 
 ## 🚀 Technologies
 
