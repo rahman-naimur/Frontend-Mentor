@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+body {
+    background-color: #141414ff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    color: #ffffffda;
+
+}
+
+.container {
+    background-color: #1f1f1fff;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    border-radius: 8px;
+}
+
+img {
+    border-radius: 50%;
+    max-width: 100px;
+    margin-top: 40px;
+
+}
+
+h1 {
+    font-size: 2.3rem;
+    margin: 0;
+    font-weight: 700;
+
+}
+
+h3 {
+    color: hsl(75, 94%, 57%);
+    font-size: 1.1rem;
+    margin: 5px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 14px;
+    margin: 15px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    padding: 8px 80px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #333333ff;
+    text-align: center;
+    font-weight: 400;
+}
+
+li:active {
+    cursor: pointer;
+    color: #000;
+    background-color: hsl(75, 94%, 57%);
+}
+
+a {
+    color: #ffffffda;
+    text-decoration: none;
+}
+
+
+.attribution {
+    margin-top: 20px;
+}
+
+
+
+/* Media Query*/
+
+@media (max-width: 375px) {
+
+      .container {
+        max-width: 90vw;
+        margin: auto;
+      }
+    }
